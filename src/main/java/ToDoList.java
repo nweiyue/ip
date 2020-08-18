@@ -17,9 +17,9 @@ public class ToDoList {
         StringBuilder sb = new StringBuilder();
         int index = 1;
         for (Task task : list) {
-            sb.append(index).append(". ").append(task.toString()).append("\n ");
+            sb.append(index).append(". ").append(task.toString()).append("\n\t ");
             index++;
         }
-        return sb.delete(sb.length() - 2, sb.length() - 1).toString();
+        return sb.delete(sb.length() - 3, sb.length() - 1).toString();
     }
 }
